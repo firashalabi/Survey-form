@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <style>
+         @media screen and (max-width: 800px) {
+            div.example {
+             display: block;
+         }
+         }
+
+         .div {
+            display: block;
+            opacity: 0.9;
+            font-family: 'Franklin Gothic Medium';
+            font-style: oblique;
+            font-size: 100%;
+             }
+         .white-text{
+             color: whitesmoke;
+         }
+         .gold-text{
+             color: gold;
+         }
+         .center {
+           justify-content: center;
+           margin: "auto";
+           width: "50%";
+           padding: "20px";
+           text-align: center;
+         }
+         .picture {
+             background-image: image-set("crypto-background-img.png");
+         }
+         .border{
+             border-style: solid;
+             border-color: gold;
+             padding: "50px 20px 20px 50px";
+             margin: "50px 20px 20px 50px";
+             width: "60px";
+         }
+         a:link{
+            background-color: white;
+            color: black;
+            border: 2px solid teal;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+         }
+         a:visited{
+             letter-spacing: 20%;
+             color: darkred;
+
+         }
+         a:active{
+             color: azure;
+         }
+
+         a:hover{
+            background-color: teal;
+            color: lightblue;
+         }
+         .left-text{
+             text-align: left;
+         }
+
+     </style>
+</head>
+  <div class="center div border">
+<body class="center picture white-text">
+    <h1 id="title">Cryptocurencies</h1>
+    <p id="description" class="gold-text left-text"><b> This is a survey about cryptocurrencies so fill in all the below sections and let us know what currencies of the mentioned in this survey you're intrested in.<br><center class="gold-text">Enjoy you're investments!!</center></b></p>
+<div>
+<form id="survey-form" class="label">
+
+    <label for="Name" id="name-label">Name: </label>
+    <input type="text" name="name" id="name" placeholder="e.g:Jack" required><br>
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" name="email" id="email" placeholder="e.g:name@mail.com" required><br>
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" name="number" id="number" min="0" max="10" placeholder="e.g:0,1,2,3,4,5,6" required><br>
+    
+    <label for="crypto" aria-placeholder="">Choose a cryptocurrency</label>
+    <select name="crypto" id="dropdown">
+        <option value="XRP">XRP</option>>
+
+        <option value="Shiba Inu">Shiba Inu</option>
+
+        <option value="PolkaDot">PolkaDot</option>
+     </select>
+
+     <p>Please select your all time favorite cryptocurrency: </p>
+
+     <input type="radio" id="xrp" name="fav_currency" value="XRP">
+     <label for="xrp">XRP</label><br>
+     <input type="radio" id="Shiba Inu" name="fav_currency" value="SHIBA INU">
+     <label for="Shiba Inu">SHIBA INU</label><br>
+     <input type="radio" id="PolkaDot" name="fav_currency" value="POLKADOT">
+     <label for="PolkaDot">POLKADOT</label><br>
+     <label for="others">OTHERS:</label><br>
+     <input type="text" id="others" name="fav_currency"  placeholder="input here if your fav isn't above"><br>   
+     
+     <input type="checkbox" id="trading type" name="investor" value="Investor">
+     <label for="investor"> Long Term Investor</label><br>
+     <input type="checkbox" id="trading type" name="scalp[ing trading" value="scalping trading">
+     <label for="scalping trading"> daily scalping trader</label><br>
+     
+     <label for="CryptoTradingReview">Your reviews about Cryptocurencies: </label><br>
+     <textarea name="CryptoTradingReview" id="CryptoTradingReview" cols="40" rows="3"></textarea><br>
+    
+     <input type="submit" id="submit" placeholder="Submit">
+     </form>
+
+
+     <p class="gold-text left-text"><b> And we left for you some of your favorite websites and easy accesissable to continue your analysis with joy &#128571 &#128640; </b></p>
+     <a href="https://coinmarketcap.com/" target="_blank" class="a">CoinMarketCap</a>
+     <a href="https://www.coingecko.com/" target="_blank" class="a">CoinGecko</a>
+     <a href="https://www.investing.com/" target="_blank" class="a">Investing.com</a>
+     <a href="https://www.investopedia.com/" target="_blank" class="a">Investopedia</a>
+     <a href="https://bitinfocharts.com/" target="_blank" class="a">Bitinfocharts</a>
+     <a href="https://www.tradingview.com/" target="_blank" class="a">TradingView</a>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</div>
+   </div>
+
+</body>
+</html>
